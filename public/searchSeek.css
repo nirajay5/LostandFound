@@ -1,0 +1,16 @@
+body {
+  --blue-dark: #142a50;
+  --blue-light: #365c85;
+  --yellow-dark: #daab27;
+  --yellow-light: #feebb1;
+  --gray-dark: #b3c1d1;
+  --gray-light:#e5e5e5;
+  background:var(--gray-dark);
+}
+
+.nextFormBtn {
+  background:var(--blue-dark);
+}
+.submitFormBtn {
+  background:var(--blue-dark);
+}
