@@ -1,0 +1,151 @@
+/* LOGIN PAGE */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 2em 1em;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  --blue-dark: #142a50;
+  --blue-light: #365c85;
+  --yellow-dark: #daab27;
+  --yellow-light: #feebbl;
+  --gray-dark: #b3cldl;
+  --gray-light: #e5e5e5;
+}
+#main {
+  width: 85%;
+}
+#logo {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+#logo > img {
+  height: 40px;
+  width: auto;
+}
+h3 {
+  color: var(--blue-dark);
+  font-weight: bolder;
+  font-size: 1.25em;
+  margin: 0.5em 0;
+}
+
+h4 {
+  color: var(--blue-dark);
+  font-weight: bolder;
+  font-size: 1.25em;
+  margin: 0.5em 0;
+  align-items: center;
+  text-align: center;
+  padding: 10% 0 0 0;
+}
+
+body, html {
+  --blue-dark: #142a50;
+  --blue-light: #365c85;
+  --yellow-dark: #daab27;
+  --yellow-light: #feebb1;
+  --gray-dark: #b3c1d1;
+  --gray-light:#e5e5e5;
+  height: 100%;
+  margin: 0;
+  background:var(--blue-light);
+}
+
+.login-container {
+  position: absolute;
+  left: -50px;
+  height: 100%;
+  flex-basis: auto;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.login-container > div {
+  justify-content: center;
+  text-align: center;
+  line-height: 75px;
+  font-size: 1.25em;
+}
+
+.button {
+  background-color: white;
+  border: none;
+  color: white;
+/*   padding: 16px 32px; */
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25em;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.login-button {
+  background-color: white;
+  color: #142a50;
+}
+
+.img {
+  left: 0px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .img {
+    width: 100%;
+    height: auto;
+  }
+  #logo > img {
+    height: 60px;
+  }
+  .right {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .img {
+    min-width: 100%;
+    height: 100%;
+  }
+  #logo > img {
+    height: 60px;
+  }
+  .login-container > div {
+    object-fit: cover;
+    height: 768px;
+    width: 1080px;
+    flex-basis: 50%;
+  }
+  .right {
+    padding: 20% 0 20% 0;
+  }
+}
+
+module.exports = {
+  variants: {
+    objectFit: ['responsive'],
+  }
+}

@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 0.8em;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  --blue-dark: #142a50;
+  --blue-light: #365c85;
+  --yellow-dark: #daab27;
+  --yellow-light: #feebbl;
+  --gray-dark: #b3cldl;
+  --gray-light: #e5e5e5;
+}
+
+#logo {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+#logo > img {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+}
+h3 {
+  color: var(--blue-dark);
+  font-weight: bolder;
+  font-size: 1.25em;
+  margin: 0.5em 0;
+}
+.form {
+  background: white;
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+}
+.formInputSection {
+  display: flex;
+  font-size: 0.75em;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+label {
+  color: var(--blue-dark);
+  font-weight: 400;
+}
+input#fileChooser {
+  display: none;
+}
+.fileBtn {
+  width: 55px;
+  font-size: 0.8em;
+  font-weight: 400;
+  padding: 0;
+  font-weight: 600;
+  text-align: center;
+  color: var(--blue-dark);
+  background: var(--gray-light);
+}
+input {
+  background: var(--gray-light);
+  border: none;
+  padding-left: 5px;
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+textarea {
+  resize: none;
+  background: var(--gray-light);
+  border: none;
+}
+.nextFormBtn {
+  font-size: 0.75em;
+  font-weight: 500;
+  width: 50px;
+  border-radius: 5px;
+}
+.searchExisting {
+  background: white;
+  width: 100%;
+  height: 1.5em;
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 15px;
+}
+.searchBox {
+  flex-grow: 1;
+  width: auto;
+  height: auto;
+}
+.searchIcon {
+  width: 1em;
+  height: 1em;
+  transform: scaleX(-1);
+  align-self: center;
+  margin: 0 5px;
+}
+.inputDateTime {
+  display: flex;
+}
+.dateTxtBox {
+  width: 60%;
+  margin-right: 5%;
+}
+.timeTxtBox {
+  width: 35%;
+}
+.submitFormBtn {
+  font-size: 0.75em;
+  font-weight: 500;
+  width: 50px;
+  border-radius: 5px;
+}
+.search-form-btn {
+  margin-top: 10px;
+  align-self: flex-end;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+}
+.dateTimeRange {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.from,
+.to {
+  flex-grow: 1;
+}
+.rangeText {
+  flex-grow: 0;
+  margin: 0 5px;
+  color: var(--blue-dark);
+}
+.dateTxtBox_search {
+  width: 60%;
+}
+.timeTxtBox_search {
+  width: 35%;
+  margin-left: 5%;
+}
+.searchExisting > input {
+  background: white;
+}
+.errorMessage {
+  color: red;
+  font-weight: bold;
+  margin: 0 5px;
+}
+.displayFile {
+  display: flex;
+}
+#imgFileName {
+  font-weight: bold;
+  font-style: italic;
+  margin: 0 5px;
+}
+
+@media (min-width: 768px) {
+  /* For tablets: */
+  h3,
+  .form,
+  .searchExisting {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form {
+    padding: 2% 5%;
+  }
+  .dateTimeRange {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .input {
+    line-height: 1.5;
+    font-size: 1.2em;
+  }
+  #logo > img {
+    height: 60px;
+  }
+    .searchExisting{
+    min-height:1.3em;
+    height:auto;
+  }
+    input{
+    line-height: 1.5;
+    font-size: 1.5em;
+  }
+    input[type=time]{
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* For desktop: */
+
+  h3{
+    font-size:1.8em;
+  }
+  h3,
+  .form,
+  .searchExisting {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .searchExisting{
+    min-height:1.5em;
+    height:auto;
+  }
+
+  .dateTimeRange {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  input{
+    line-height: 1.5;
+    font-size: 1.8em;
+  }
+    input[type=time]{
+    font-size: 1.8em;
+  }
+  .form {
+    padding: 5% 10%;
+  }
+  #logo > img {
+    height: 60px;
+  }
+  label{
+    font-size:1.2em;
+  }
+  .fileBtn {
+  width: 60px;
+  }
+
+}
